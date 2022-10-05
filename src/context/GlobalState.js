@@ -22,14 +22,14 @@ export const GlobalProvider = ({ children }) => {
 
   //Actions
 
-  const deleteTransaction = (id) => {
+  function deleteTransaction(id){
     dispatch({
       type: "DELETE_TRANSACTION",
       payload: id,
     });
   };
 
-  const addTransaction = (transaction) => {
+  function addTransaction (transaction){
     dispatch({
       type: "ADD_TRANSACTION",
       payload: transaction,
